@@ -1,0 +1,1 @@
+export 'note.interface.dart';
