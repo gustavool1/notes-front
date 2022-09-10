@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       initialBinding: AppBindings(),
-      initialRoute: AppRoutes.home,
+      initialRoute: AppRoutes.login,
       getPages: AppPages.routes,
     );
   }

@@ -12,6 +12,9 @@ class CustomTextField extends StatelessWidget {
   final TextStyle? labelStyle;
   final Widget? icon;
   final TextStyle? hintStyle;
+  final FormFieldValidator<String>? validator;
+  // final MultiValidator? multiValidator;
+
   const CustomTextField({
     required this.onTap,
     required this.hintText,
@@ -21,6 +24,8 @@ class CustomTextField extends StatelessWidget {
     this.onChanged,
     this.labelStyle,
     this.icon,
+    this.validator,
+    // this.multiValidator,
     this.keyboardType = TextInputType.text,
     this.textInputAction = TextInputAction.done,
     super.key,
@@ -28,16 +33,11 @@ class CustomTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
       onTap: onTap,
       onChanged: onChanged,
       decoration: InputDecoration(
-        // icon: icon,
         prefixIcon: icon,
-        // prefixIconConstraints: const BoxConstraints(
-        //   maxWidth: 20,
-        //   maxHeight: 20,
-        // ),
         fillColor: ColorsProject.gray300,
         filled: true,
         focusedBorder: const OutlineInputBorder(

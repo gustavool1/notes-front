@@ -14,11 +14,10 @@ class Fonts {
     fontWeight: FontWeight.w300,
     color: ColorsProject.white,
   );
-
-  static final body1Helvetica = TextStyle(
-    fontFamily: 'Helvetica',
-    fontSize: 14,
-    fontWeight: FontWeight.w400,
-    color: ColorsProject.white,
+  static final body3Nunito = TextStyle(
+    fontFamily: 'Nunito',
+    fontSize: 16,
+    fontWeight: FontWeight.w300,
+    color: ColorsProject.coolGray,
   );
 }
