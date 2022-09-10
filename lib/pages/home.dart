@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:notes/components/components.dart';
-import 'package:notes/components/custom_text_field.dart';
 import 'package:notes/store/use_store.dart';
 import 'package:notes/styles/style.dart';
 
@@ -29,7 +28,7 @@ class HomePage extends UseAppStore {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          FaIcon(
+                          const FaIcon(
                             FontAwesomeIcons.google,
                             color: Colors.red,
                           ),

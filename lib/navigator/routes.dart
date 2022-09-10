@@ -5,5 +5,5 @@ class AppRoutes {
 
   static String home = '$prefix/home';
   static String login = '$prefix/login';
-  static String pokemon = '$prefix/';
+  static String register = '$prefix/register';
 }

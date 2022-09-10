@@ -14,6 +14,7 @@ class CustomTextField extends StatelessWidget {
   final TextStyle? hintStyle;
   final FormFieldValidator<String>? validator;
   // final MultiValidator? multiValidator;
+  final TextEditingController? controller;
 
   const CustomTextField({
     required this.onTap,
@@ -25,6 +26,7 @@ class CustomTextField extends StatelessWidget {
     this.labelStyle,
     this.icon,
     this.validator,
+    this.controller,
     // this.multiValidator,
     this.keyboardType = TextInputType.text,
     this.textInputAction = TextInputAction.done,
@@ -34,6 +36,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       onTap: onTap,
       onChanged: onChanged,
       decoration: InputDecoration(

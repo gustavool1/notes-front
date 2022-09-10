@@ -1,8 +1,10 @@
 import 'package:get/get.dart';
 import 'package:notes/models/note.dart';
 
-import '../repositories.dart/repositories.dart';
-import 'interfaces/interface.dart';
+import '../../repositories.dart/repositories.dart';
+import 'note.interface.dart';
+
+export 'note.interface.dart';
 
 class NotesStore extends GetxController implements NoteInterface {
   final _repository = NotesRepository();
